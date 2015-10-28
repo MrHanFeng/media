@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="MobileOptimized" content="width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+    <title>峰峰传媒</title>
+    <script src="js/jquery-1.8.0min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+     .swiper-container {
+         width: 100%;
+         height: 100%;
+         
+     }
+     .swiper-slide {
+         text-align: center;
+         font-size: 18px;
+         background: #fff;
+         
+         /* Center slide text vertically */
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         -webkit-justify-content: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+        }
+        .swiper-wrapper img{
+            height:160px;
+        }
+     </style>
+</head>
+<body>
+<div class="contain">
+    <!-- 一。第一页面-->
+    <div class="home index show-hover">
+        <!--头页-->
+        <div class="header">
+            <ul>
+                <li style="float: left">
+                    <img src="picture/logo.png" alt="">
+                </li>
+                <li style="float: right">
+                    <img src="picture/seach.png" alt="" class="search">
+                </li>
+            </ul>
+        </div>
+        <!--菜单也-->
+        <div class="menu">
+                <ul>
+                    <li class="cate-hover">推荐</li>
+                    <li>排行</li>
+                    <li>分类</li>
+                    <li>歌手</li>
+                    <li>MV</li>
+                </ul>
+        </div><!--end menu-->
+        <!--详细内容-->
+        <div class="details">
+            <div class="detail dt-hover">
+                <div class="ad_roll">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/ad_h1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/ad_h2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/ad_h3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/ad_h4.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <!-- Swiper JS -->
+                    <script src="js/swiper.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        pagination: '.swiper-pagination',
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        paginationClickable: true,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        autoplay: 2500,
+                        autoplayDisableOnInteraction: false
+                    });
+                    </script>
+                </div><!--end ad-->
+                <div class="media">
+                    <div class="ms_cate"><!--最新歌曲-->
+                        <h3>最新歌曲</h3>
+                        <div class="ms_detail">
+                            <p class="music_box" data-cs="华语" >
+                                <img src="images/imgBg.png" alt="" class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate1.jpg" alt="">
+                                </span>
+                            </p>
+                            <p class="music_box" data-cs="欧美" >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate2.jpg" alt="">
+                                </span>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate3.jpg" alt="">
+                                </span>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                    </div><!--最新歌曲-->
+                    <div class="ms_cate"><!--歌曲推荐-->
+                        <h3>歌曲推荐</h3>
+                        <div class="ms_detail">
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt="" class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">歌曲1</font>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">歌曲2</font>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">歌曲3</font>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">华语排行榜</font>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">华语排行榜</font>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">日韩排行榜</font>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">日韩排行榜</font>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">日韩排行榜</font>
+                            </p>
+                            <p class="music_box" data-cs="日韩"  >
+                                <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/music_cate4.jpg" alt="">
+                                </span>
+                                <font style="">日韩排行榜</font>
+                            </p>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div><!--end 歌曲推荐-->
+                    <div class="ms_cate"><!--MV-->
+                        <h3>最新MV</h3>
+                        <div class="ms_detail">
+                            <div class="videos">
+                                    <p class="video" onclick="video_play('日韩','1')">
+                                        <img src="images/video.jpg" alt="">
+                                        <span>Like Ooh-Ahh-Twice[韩]</span>
+                                    </p>
+                            </div>
+                            <div class="videos">
+                                    <p class="video" onclick="video_play('日韩','2')">
+                                        <img src="images/video.jpg" alt="">
+                                        <span>Like Ooh-Ahh-Twice[韩]</span>
+                                    </p>
+                            </div>
+                            <div class="videos">
+                                    <p class="video" onclick="video_play('日韩','3')">
+                                        <img src="images/video.jpg" alt="">
+                                        <span>Like</span>
+                                    </p>
+                            </div>
+                            <div class="videos">
+                                    <p class="video" onclick="video_play('日韩','4')">
+                                        <img src="images/video.jpg" alt="">
+                                        <span>Like Ooh-Ahh-Twice[韩]</span>
+                                    </p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div><!--end 最新MV-->
+                </div><!--end media-->
+            </div><!--end detail-->
+
+            <!--2.排行页-->
+            <div class="detail">
+                <div class="ms_cate"><!--歌曲推荐-->
+                    <h3>歌曲排行榜</h3>
+                    <div class="ms_detail">
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt="" class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd1.jpg" alt="">
+                                </span>
+                                <font style="">华语排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd2.jpg" alt="">
+                                </span>
+                            <font style="">欧美排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd3.jpg" alt="">
+                                </span>
+                            <font style="">日韩排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd4.jpg" alt="">
+                                </span>
+                            <font style="">华语排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd5.jpg" alt="">
+                                </span>
+                            <font style="">华语排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd6.jpg" alt="">
+                                </span>
+                            <font style="">日韩排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd1.jpg" alt="">
+                                </span>
+                            <font style="">日韩排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd2.jpg" alt="">
+                                </span>
+                            <font style="">日韩排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd3.jpg" alt="">
+                                </span>
+                            <font style="">日韩排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd4.jpg" alt="">
+                                </span>
+                            <font style="">日韩排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd5.jpg" alt="">
+                                </span>
+                            <font style="">日韩排行榜</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/bd6.jpg" alt="">
+                                </span>
+                            <font style="">日韩排行榜</font>
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                </div><!--end 歌曲推荐-->
+            </div><!--end detail-->
+
+            <!--3.分类页-->
+            <div class="detail" style="background: #f3f3f3">
+                <div class="ms_cate"><!--热门分类-->
+                    <h3>热门分类</h3>
+                    <div class="ms_detail" >
+                        <p class="catebox"  >
+                            <span>安静</span>
+                        </p>
+                        <p class="catebox"  >
+                            <span>洗脑</span>
+                        </p>
+                        <p class="catebox"  >
+                            <span>DJ</span>
+                        </p>
+                        <p class="catebox"  >
+                            <span>安静</span>
+                        </p>
+                        <p class="catebox"  >
+                            <span>洗脑</span>
+                        </p>
+                        <p class="catebox"  >
+                            <span>DJ</span>
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="ms_cate"><!--分类-->
+                        <h3>心情分类</h3>
+                        <div class="ms_detail">
+                            <p class="catebox" onclick="muisc_list_fn('安静')">
+                                <span>悲伤</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('洗脑')">
+                                <span>快乐</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('DJ')">
+                                <span>逗比</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('安静')">
+                                <span>激情</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('洗脑')">
+                                <span>励志</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('DJ')">
+                                <span>甜蜜</span>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="ms_cate"><!--分类-->
+                        <h3>音调分类</h3>
+                        <div class="ms_detail">
+                            <p class="catebox" onclick="muisc_list_fn('安静')">
+                                <span>悲伤</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('洗脑')">
+                                <span>快乐</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('DJ')">
+                                <span>逗比</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('安静')">
+                                <span>激情</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('洗脑')">
+                                <span>励志</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('DJ')">
+                                <span>甜蜜</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('安静')">
+                                <span>激情</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('洗脑')">
+                                <span>励志</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('DJ')">
+                                <span>甜蜜</span>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="ms_cate"><!--分类-->
+                        <h3>风格分类</h3>
+                        <div class="ms_detail">
+                            <p class="catebox" onclick="muisc_list_fn('安静')">
+                                <span>悲伤</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('洗脑')">
+                                <span>快乐</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('DJ')">
+                                <span>逗比</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('安静')">
+                                <span>激情</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('洗脑')">
+                                <span>励志</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('DJ')">
+                                <span>甜蜜</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('安静')">
+                                <span>激情</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('洗脑')">
+                                <span>励志</span>
+                            </p>
+                            <p class="catebox" onclick="muisc_list_fn('DJ')">
+                                <span>甜蜜</span>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--end detail-->
+
+            <!--4。歌手分类-->
+            <div class="detail">
+                <div class="ms_cate"><!--歌手推荐-->
+                    <h3>歌手排行榜</h3>
+                    <div class="ms_detail">
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt="" class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs1.jpg" alt="">
+                                </span>
+                            <font style="">华语歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs2.jpg" alt="">
+                                </span>
+                            <font style="">欧美歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs1.jpg" alt="">
+                                </span>
+                            <font style="">日韩歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs2.jpg" alt="">
+                                </span>
+                            <font style="">华语歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs1.jpg" alt="">
+                                </span>
+                            <font style="">华语歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs2.jpg" alt="">
+                                </span>
+                            <font style="">日韩歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs1.jpg" alt="">
+                                </span>
+                            <font style="">日韩歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs2.jpg" alt="">
+                                </span>
+                            <font style="">日韩歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs1.jpg" alt="">
+                                </span>
+                            <font style="">日韩歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs2.jpg" alt="">
+                                </span>
+                            <font style="">日韩歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs1.jpg" alt="">
+                                </span>
+                            <font style="">日韩歌手</font>
+                        </p>
+                        <p class="music_box" data-cs="日韩"  >
+                            <img src="images/imgBg.png" alt=""  class="img_bg">
+                                <span class="music_pic">
+                                    <img src="images/gs2.jpg" alt="">
+                                </span>
+                            <font style="">日韩歌手榜</font>
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                </div><!--end 歌手推荐-->
+            </div><!--end detail-->
+
+            <!--5.MV页-->
+            <div class="detail">
+                <div class="ms_cate"><!--MV-->
+                    <h3>最新MV</h3>
+                    <div class="ms_detail">
+                        <div class="videos">
+                            <p class="video" onclick="video_play('日韩','1')">
+                                <img src="images/video.jpg" alt="">
+                                <span>Like Ooh-Ahh-Twice[韩]</span>
+                            </p>
+                        </div>
+                        <div class="videos">
+                            <p class="video" onclick="video_play('日韩','2')">
+                                <img src="images/video.jpg" alt="">
+                                <span>Like Ooh-Ahh-Twice[韩]</span>
+                            </p>
+                        </div>
+                        <div class="videos">
+                            <p class="video" onclick="video_play('日韩','3')">
+                                <img src="images/video.jpg" alt="">
+                                <span>Like</span>
+                            </p>
+                        </div>
+                        <div class="videos">
+                            <p class="video" onclick="video_play('日韩','4')">
+                                <img src="images/video.jpg" alt="">
+                                <span>Like Ooh-Ahh-Twice[韩]</span>
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div><!--end 最新MV-->
+                <div class="ms_cate"><!--MV-->
+                    <h3>人气最高</h3>
+                    <div class="ms_detail">
+                        <div class="videos">
+                            <p class="video" onclick="video_play('日韩','1')">
+                                <img src="images/video.jpg" alt="">
+                                <span>Like Ooh-Ahh-Twice[韩]</span>
+                            </p>
+                        </div>
+                        <div class="videos">
+                            <p class="video" onclick="video_play('日韩','2')">
+                                <img src="images/video.jpg" alt="">
+                                <span>Like Ooh-Ahh-Twice[韩]</span>
+                            </p>
+                        </div>
+                        <div class="videos">
+                            <p class="video" onclick="video_play('日韩','3')">
+                                <img src="images/video.jpg" alt="">
+                                <span>Like</span>
+                            </p>
+                        </div>
+                        <div class="videos">
+                            <p class="video" onclick="video_play('日韩','4')">
+                                <img src="images/video.jpg" alt="">
+                                <span>Like Ooh-Ahh-Twice[韩]</span>
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div><!--end 最新MV-->
+            </div><!--end detail-->
+        </div><!--end detials-->
+        <!--尾页-->
+        <div class="footer">
+            <div class="ft_contain">
+                版权没有，仿冒不究！
+            </div>
+        </div>
+    </div><!--end home-->
+
+    <!-- 二。音乐列表-->
+    <div class="home music_list ">
+        <div class="header" style="background: #f3f3f3;">
+            <ul>
+                <li style="float: left;background: #f3f3f3;height:50px;" >
+                    <img src="picture/back.png" alt="" onclick="back_fn()">
+                </li>
+                <li style="float: left;">
+                    <h3 style="padding-left: 10px;" class="music_cate">asds</h3>
+                </li>
+                <li style="float: right">
+                    <img src="picture/seach.png" alt="" class="search">
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="list_detail"><!--存放音乐列表-->
+        </div>
+    </div><!--end 音乐列表-->
+
+    <!-- 三。音乐控制台-->
+    <div class="home music_controll">
+        <audio controls="controls" loop="loop" id="vo-id" >
+            <source src="" type="audio/mpeg">
+        </audio>
+        <div class='ms_word'>当前歌曲:</div>
+    </div><!--end 音乐控制台-->
+
+    <!-- 四。视屏列表-->
+    <div class="home video_list">
+
+    </div>
+    <!-- end 视屏列表-->
+
+    <!--  五。视屏播放页面-->
+    <div class="home play_video">
+        <div class="header" style="background: #f3f3f3;">
+            <ul>
+                <li style="float: left;">
+                    <img src="picture/back.png" alt="" onclick="back_fn()">
+                </li>
+                <li style="float: left;"><h3>视屏播放</h3></li>
+                <li style="float: right">
+                    <img src="picture/seach.png" alt="" class="search">
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="play_box">
+            <div class="play_window">
+                <video controls="controls" preload="auto" id="video">
+                    <source src="mp4/mtv1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="controll">
+                <ul>
+                    <li class="cn-play">
+                        播放
+                    </li>
+                    <li class="pre">
+                        <i class="fa fa-arrow-left"></i>
+                        上一个
+                    </li>
+                    <li class="next">
+                        下一个
+                        <i class="fa fa-arrow-right"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="user_info">
+            <div class="us_left"></div>
+            <div class="us_right">
+                <span style="margin-left:10px;">放剧场； 作者：哈哈哈</span>
+            </div>
+        </div>
+        <div class="liuyan">
+            <h2>精华评论</h2>
+            <div class="speak_list">
+                <div class="speak">
+                    <div class="sk_left"></div>
+                    <div class="sk_right">
+                        <div class="user_name">甘英浩</div>
+                        <div class="user_con">/@圣诞雪中漫步:历史上刘弗陵只活了21岁！十年前他是十岁现在应该有20了吧！也就是说只有一年的寿命了！</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="speak_list">
+                <div class="speak">
+                    <div class="sk_left"></div>
+                    <div class="sk_right">
+                        <div class="user_name">甘英浩</div>
+                        <div class="user_con">现在编剧不是最喜欢改历史吗，说不定最后他改成皇帝/诈死然后和云歌在塞外双宿双栖/@圣诞雪中漫步:历史上刘弗陵只活了21岁！十年前他是十岁现在应该有20了吧！也就是说只有一年的寿命了！</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="speak_list">
+                <div class="speak">
+                    <div class="sk_left"></div>
+                    <div class="sk_right">
+                        <div class="user_name">甘英浩</div>
+                        <div class="user_con">十岁现在应该有20了吧！也就是说只有一年的寿命了！</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end 视屏播放页面-->
+</div><!--end contain-->
+</body>
+<script>
+
+</script>
+</html>
